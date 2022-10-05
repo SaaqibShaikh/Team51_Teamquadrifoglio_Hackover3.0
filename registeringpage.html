@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Search For Events</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+
+
+
+
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Sign In</a></li>
+  <li><a href="#contact">Events</a></li>
+  <li><a href="#about">Book Now</a></li>
+</ul>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-25">
+      <input type="text" id="Name" name="name" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Phone No.</label>
+    </div>
+<div class="col-25">
+      <input type="text" id="phoneno." name="phoneno" placeholder="Your phone no.">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Event</label>
+    </div>
+    <div class="col-25">
+      <select id="country" name="country">
+        <option value="India">Euphoria</option>
+        <option value="India">Crescendo</option>
+        <option value="India">Athlead </option>
+      </select>
+    </div>
+  </div>
+  <div class="row-25">
+    <div class="col-35">
+      <label for="subject">Address</label>
+    </div>
+    <div class="col-30">
+      <textarea id="Address" name="Address" placeholder="Write Address.." style="height:50px","width:25px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+
+</div>
+<div class="row">
+    <div class="col-25">
+  <label for="pay">Payment</label>
+  </div>
+   <div class="row">
+   <div class="col-25">
+   
+      <select id="country" name="country">
+        <option value="upi">UPI</option>
+        <option value="card">Debit Card</option>
+        <option value="cash">Cash</option>
+      </select>
+     
+
+
+
+
+
+        
+<br> <div id="search-container"> 
+<br>
+         <input
+         placeholder="Search Events Here.."
+        />
+        <button style="background:#078EFF;color:black;" id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button type="button" onclick="alert('Website is yet to be updated')">All</button>
+     <button type="button" onclick="alert('Website is yet to be updated')">Price</button>
+     <button type="button" onclick="alert('Website is yet to be updated')">Location</button>
+     <button type="button" onclick="alert('Website is yet to be updated')">Date</button>
+     <button type="button" onclick="alert('Website is yet to be updated')">Type of Event</button>
+
+  </form>
+</div>
+  </body>
+      
+
+
+
+
+</html>
